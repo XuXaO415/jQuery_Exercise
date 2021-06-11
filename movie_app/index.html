@@ -5,8 +5,46 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Movie App Exercise</title>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
     </head>
     <body>
+        <h1>
+            <center>
+                <strong>
+                    My Movie Watch List
+                </strong>
+            </center>
+        </h1>
+        <form>
+            <!-- <div class="form-row"> -->
+            <div class="form-group col-md-5" id="add-movie">
+                <!-- <div class="col"> -->
+                <label for="title">Title</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-1" id="rating">
+                <label for="rating">Rating</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    required
+                    min="0"
+                    max="10"
+                >
+            </div>
+        </div>
+        <div class="form-group" id="sumbit">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- <label>Title</label>
+        <input type="text">
+        <label>Rating</label>
+        <input type="text">
+        <button type="button" id="submitBtn">
+            Submit
+            <button> -->
         <script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     </body>
 </html>
